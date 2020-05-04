@@ -13,4 +13,9 @@ export class DataService {
     let obsData: Observable<any> = this.httpClient.get('http://localhost:3000/users');
     return obsData;
   }
+
+  public fetchUserById(id: string): Observable<any> {
+    let obsDataById: Observable<any> = this.httpClient.get('http://localhost:3000/users/' + id);
+    return obsDataById;
+  }
 }

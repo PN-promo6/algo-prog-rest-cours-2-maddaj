@@ -22,5 +22,15 @@ export class UsersListComponent implements OnInit {
           console.log(error)
         },
       )
+
+    this.dataService.fetchUserById("5eaecda0ba6003ab1113ceac")
+      .subscribe(
+        res => {
+          console.log(res);
+        },
+        error => {
+          console.log(error)
+        },
+      )
   }
 }
