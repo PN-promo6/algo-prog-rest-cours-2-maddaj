@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+
 import { DataService } from '../services/data-service/data.service';
+import { Player } from '../models/player/player';
 
 @Component({
   selector: 'app-users-list',
@@ -8,7 +10,7 @@ import { DataService } from '../services/data-service/data.service';
 })
 export class UsersListComponent implements OnInit {
 
-  users: any;
+  users: Player[];
 
   constructor(private dataService: DataService) { }
 
