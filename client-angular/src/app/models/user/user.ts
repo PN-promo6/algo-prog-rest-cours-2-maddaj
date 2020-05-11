@@ -1,6 +1,6 @@
-export class Player {
+export class User {
     id: string
-    age: string
+    age: number
     name: string
     gender: string
     company: string
