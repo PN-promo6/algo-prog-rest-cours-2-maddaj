@@ -7,6 +7,8 @@ import { UsersListComponent } from './users-list/users-list.component';
 import { EventsListComponent } from './events-list/events-list.component';
 import { UserPreviewComponent } from './user-preview/user-preview.component';
 import { EventsPreviewComponent } from './events-preview/events-preview.component';
+import { AppRoutingModule } from './app-routing.module';
+import { NavbarComponent } from './navbar/navbar.component';
 
 @NgModule({
   declarations: [
@@ -14,11 +16,13 @@ import { EventsPreviewComponent } from './events-preview/events-preview.componen
     UsersListComponent,
     EventsListComponent,
     UserPreviewComponent,
-    EventsPreviewComponent
+    EventsPreviewComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
-    HttpClientModule
+    HttpClientModule,
+    AppRoutingModule
   ],
   providers: [
 
